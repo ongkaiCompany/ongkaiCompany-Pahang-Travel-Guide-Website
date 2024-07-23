@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--start of html-->
+<html lang="en">
+<!--insert file header comment here -->
+<!--Description:Let's travel lah page-->
+<!--Author:Ong weng kai-->
+<!--dd/mm/yyyyy-->
+<!--validated:dd/mm/yyyy-->
+<!--start of head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel lah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!--end of head-->
+<!--start of body-->
+
+<body>
+    <!--start of header-->
+    <header>
+        <!--start of navigation menu-->
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">Let's Travel lah</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="travel sight.html">Travel Sight</a></li>
+                    <li><a href="accomodation.html">Accomodation</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!--end of navigation menu-->
+    </header>
+    <!--end of header-->
+    <div class="banner5"></div>
+    <!--start of internal link-->
+    <nav>
+        <ol class="smallmenu">
+            <li><a href="#About me">About me</a></li>
+        </ol>
+    </nav>
+
+    <!--end of internal link-->
+    <!--start of article-->
+    <article>
+
+        <main id="contents">
+
+            <section id="About me">
+                <h1 class="h">About me</h1>
+                <p class="paragraph">
+
+                    <img src="img/Ong weng kai.jpeg" width="250" height="250" alt="author ong weng kai" class="Aboutme">
+
+
+                    I am Ong Weng kai, I come from from pekan, Pahang. I love to take pictures in my spare time. My goal
+                    for this year is to get up earlier and My goal is not to be better than anyone else, but to be
+                    better than I used to be. I am good at drawing and my weakness would be fear of public speaking. I
+                    am so delighted to do this assignment because thought out the process I learn a lot about web
+                    development. My goal for the year probably is to pass this unit with flying colors.
+                </p>
+            </section>
+
+
+
+        </main>
+        <footer>
+            <p id="footer"><small>© <a href="aboutme.html">Ong Weng kai</a>|Last updated: 5 July 2021</small></p>
+        </footer>
+
+        <!--start of javascript-->
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <!--end of javascript-->
+
+    </article>
+    <!--end of article-->
+</body>
+<!--end of body-->
+
+</html>

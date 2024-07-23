@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--start of html-->
+<html lang="en">
+<!--insert file header comment here -->
+<!--Description:Let's travel lah page-->
+<!--Author:Ong weng kai-->
+<!--dd/mm/yyyyy-->
+<!--validated:dd/mm/yyyy-->
+<!--start of head-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Travel lah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!--end of head-->
+<!--start of body-->
+
+<body>
+  <!--start of header-->
+  <header>
+    <!--start of navigation menu-->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#">Let's Travel lah</a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="travel sight.html">Travel Sight</a></li>
+          <li><a href="accomodation.html">Accomodation</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="feedback.html">feedback</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--end of navigation menu-->
+  </header>
+  <!--end of header-->
+    <div class="banner3"></div>
+    <!--start of internal link-->
+    <nav>
+        <ul class="smallmenu">
+            <li><a href="#Mee">Mee</a></li>
+            <li><a href="#Rice">Rice</a></li>
+        </ul>
+    </nav>
+
+    <!--end of internal link-->
+    <!-- Start of article-->
+    <article>
+
+        <main id="contents">
+
+            <section id="Mee" class="clear">
+                <h1 class="h">Mee</h1>
+                <h2 class="h-sub">Curry Mee</h2>
+                <!-- This information is taken from https://says.com/my/lifestyle/famous-food-in-pahang-->
+
+                <img src="img/Curry Mee.jpg" width="280px" height="220px" alt="Curry mee" class="imgL">
+                <p class="paragraph">
+
+                    <!-- This information is taken from https://says.com/my/lifestyle/famous-food-in-pahang-->
+                <p>Unlike Penang's version of curry mee, the curry broth in Pahang's version of curry mee is less creamy
+                    with more balanced flavours.
+                </p>
+                <br>
+                <p>Each bowl of curry mee comes with yellow noodles, bihun,and/or koay
+                    teow cooked in curry broth topped off with shredded steamed chicken, fish balls, fish
+                    cakes, beansprouts, and tofu puffs.</p>
+
+
+                </p>
+            </section>
+
+            <section id="Rice" class="clear">
+                <h1 class="h">Rice</h1>
+
+               <!-- <h2 class="h-sub">Nasi Kebuli</h2>
+                 This information is taken from https://whattocooktoday.com/nasi-kebuli-biryani-rice-with-fried-chicken.html-->
+<!--
+                <img src="img/Nasi Kebuli.png" width="280px" height="220px" alt="Nasi Kebuli" class="imgL">
+                <p class="paragraph" id="Nasi Kebuli Font">-->
+                    <!-- This information is taken from https://says.com/my/lifestyle/famous-food-in-pahang-->
+            <!--         
+                    Considered a heritage dish of the Kuala Lipis district, nasi kebuli is made of rice cooked with
+                    coconut oil mixed with chicken (sometimes substituted with lamb or mutton), raisins, olives,
+                    clovers, olives, and lemongrass to give it an aromatic smell.
+
+
+                </p>
+                <br>
+            -->
+                <h2 class="h-sub">Nasi Tomato</h2>
+                <!-- This information is taken from https://liveyourlifepahang.wordpress.com/food-paradise/-->
+
+                <img src="img/Nasi Kebuli.png" width="280px" height="220px" alt="Nasi Tomato" class="imgL">
+                <p class="paragraph">
+
+                    <!-- This information is taken from https://www.halalfoodmaster.com/nasi-tomato-ayam-masak-merah-dalca-potato-curry.html-->
+                <p>Nasi Tomato (“Tomato Rice”) is rather one of the popular traditional rice dishes which you can find
+                    in Pahang and also in other states of Malaysia.
+                </p>
+                <br>
+                <p>
+                    Nasi Tomato can sometimes be found, as in
+                    replacement of plain white rice, in some established restaurants and hotels as part of the Malay
+                    cuisines offering both for lunch or dinner.
+                </p>
+                </p>
+                <h2 class="h-sub">Nasi Tomato</h2>
+                <!-- This information is taken from https://liveyourlifepahang.wordpress.com/food-paradise/-->
+
+                <img src="img/Nasi Tomato.jpg" width="280px" height="220px" alt="Nasi Tomato" class="imgL">
+                <p class="paragraph">
+
+                    <!-- This information is taken from https://www.halalfoodmaster.com/nasi-tomato-ayam-masak-merah-dalca-potato-curry.html-->
+                <p>
+                    Nasi kebuli, considered a heritage dish of the Kuala Lipis district, is made of rice cooked with coconut oil and chicken, 
+                    sometimes substituted with lamb or mutton. It includes raisins, cloves, olives, and lemongrass, which give it an aromatic smell.
+                </p>
+                </p>
+
+
+            </section>
+            <br>
+        </main>
+
+
+        <footer>
+            <p id="footer" class="clearfix"><small>© <a href="aboutme.html">Ong Weng kai</a>|Last updated: 5 July
+                    2021</small></p>
+        </footer>
+
+        <!--start of javascript-->
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <!--end of javascript-->
+
+    </article>
+    <!--end of article-->
+</body>
+<!--end of body-->
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--start of html-->
+<html lang="en">
+<!--insert file header comment here -->
+<!--Description:Let's travel lah page-->
+<!--Author:Ong weng kai-->
+<!--dd/mm/yyyyy-->
+<!--validated:dd/mm/yyyy-->
+<!--start of head-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Travel lah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!--end of head-->
+<!--start of body-->
+
+<body>
+  <!--start of header-->
+  <header>
+    <!--start of navigation menu-->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#">Let's Travel lah</a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="travel sight.html">Travel Sight</a></li>
+          <li><a href="accomodation.html">Accomodation</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="feedback.html">feedback</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--end of navigation menu-->
+  </header>
+  <!--end of header-->
+    <!--end of header-->
+    <div class="banner2"></div>
+    <!--start of internal link-->
+    <nav>
+        <ol class="smallmenu">
+            <li class="SmallMenuBigFont"><a href="#Hotel Alternatives">Hotel Alternatives</a></li>
+            <li><a href="#Hotel">Hotel</a></li>
+        </ol>
+    </nav>
+
+    <!--end of internal link-->
+    <!-- Start of article-->
+    <article>
+
+        <main id="contents">
+
+            <section id="Hotel Alternatives" class="clear">
+                <h1 class="h">Hotel Alternatives</h1>
+
+                <h2 class="h-sub">Airbnb</h2>
+                <!-- This information is taken from https://www.airbnb.com/-->
+
+                <img src="img/airbnb.jpg" width="280px" height="220px" alt="airbnb" class="imgL">
+                <p class="paragraph">
+                <p>
+
+                    <span class="External">
+                        <a href="https://www.airbnb.com/" target="_blank">Airbnb</a>
+                    </span> began in 2008 when two designers who had space to share hosted three travelers looking for a
+                    place to stay. Now, millions of hosts and travelers choose to create a free Airbnb account so they
+                    can list their space and book unique accommodations anywhere in the world. And Airbnb experience
+                    hosts share their passions and interests with both travelers and locals.
+                </p>
+
+                </p>
+
+            </section>
+
+
+            <section id="Hotel" class="clear">
+                <h1 class="h">Hotel</h1>
+
+                <h2 class="h-sub">Hotels.com</h2>
+                <!-- This information is taken from https://www.hotels.com/-->
+
+                <img src="img/Hotelslogo.png" width="280px" height="220px" alt="hotelslogo" class="imgL">
+                <p class="paragraph">
+                <p>
+                <p>
+                    <span class="External">
+                        <a href="https://www.hotels.com/" target="_blank">Hotels.com </a>
+                    </span>
+
+                    is a leading provider of hotel accommodation worldwide, offering booking services through
+                    its own network of localised websites.
+                </p>
+                <br>
+                <p> Hotels.com gives travellers one of the widest selections of accommodation on the net, including both
+                    independent and major chain hotels as well as self-catering in over hundreds of thousands properties
+                    worldwide. The company offers a one-stop shopping source for hotel pricing, amenities and</p>
+                availability.
+                </p>
+
+
+                </p>
+
+            </section>
+
+
+        </main>
+
+
+        <footer>
+            <p id="footer" class="clearfix"><small>© <a href="aboutme.html">Ong Weng kai</a>|Last updated: 5 July
+                    2021</small></p>
+        </footer>
+
+        <!--start of javascript-->
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <!--end of javascript-->
+
+    </article>
+    <!--end of article-->
+</body>
+<!--end of body-->
+
+</html>

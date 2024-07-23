@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--start of html-->
+<html lang="en">
+<!--insert file header comment here -->
+<!--Description:Let's travel lah page-->
+<!--Author:Ong weng kai-->
+<!--dd/mm/yyyyy-->
+<!--validated:dd/mm/yyyy-->
+<!--start of head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel lah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<!--end of head-->
+<!--start of body-->
+
+<body>
+    <!--start of header-->
+    <header>
+        <!--start of navigation menu-->
+        <nav class="navbar">
+            <div class="content">
+                <div class="logo">
+                    <a href="#">Let's Travel lah</a>
+                </div>
+                <ul class="menu-list">
+                    <div class="icon cancel-btn">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="travel sight.html">Travel Sight</a></li>
+                    <li><a href="accomodation.html">Accomodation</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="feedback.html">feedback</a></li>
+                </ul>
+                <div class="icon menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        <!--end of navigation menu-->
+    </header>
+    <!--end of header-->
+    <div class="banner4"></div>
+    <!--start of internal link-->
+    <nav>
+        <ol class="smallmenu">
+            <li><a href="#Form">Form</a></li>
+        </ol>
+    </nav>
+
+    <!--end of internal link-->
+    <!--start of article-->
+    <article>
+
+        <main id="contents">
+
+            <section id="Form">
+                <h1 class="h">Form</h1>
+                <p class="paragraph">
+
+                <form id="entryForm" action="mailto:Ongkai89@Gmail.com " method="post">
+                    <fieldset>
+                        <legend><strong>Form</strong></legend>
+                        <p><strong><span class="require">Mandatory</span></strong></p>
+
+                        <table class="entryTable">
+                            <tr>
+                                <th><label for="name">Your name*</th> </label>
+                                <td><input type="text" name="name" required autofocus
+                                        placeholder="Please Type your Name" id="name"></td>
+                            </tr>
+                            <tr>
+                                <th> <label for="Age">Age*</th></label>
+                                <td>
+                                    <select name="age" required id="Age">
+                                        <option value="" selected>Please Select</option>
+                                        <option value="0">6-10</option>
+                                        <option value="1">11-15</option>
+                                        <option value="2">16-20</option>
+                                        <option value="3">20-25</option>
+                                        <option value="4">25-30</option>
+                                        <option value="5">30-40</option>
+                                        <option value="6">40 and above</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Gender *</th>
+                                <td>
+                                    <input type="radio" name="sex" id="male" value="Male" id="Gender" checked required>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="sex" id="female" value="Female" required>
+                                    <label for="female">Female</label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th> <label for="Picture">Picture *</th></label>
+                                <td><input type="file" name="photo" required id="Picture"></td>
+                            </tr>
+
+                            <tr>
+                                <th> <label for="E-Mail">E-Mail*</th></label>
+                                <td>
+                                    <input type="email" name="email" placeholder="sample@gmail.com" required
+                                        id="E-Mail">
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="Comment">Comment*</th></label>
+                                <td><textarea name="comment" rows="4" cols="40" id="Comment"></textarea></td>
+                            </tr>
+                        </table>
+                        <div id="entryBtns">
+                            <input type="reset" value="Remove">
+                            <input type="submit" value="Send">
+                        </div>
+                        <br>
+                </form>
+
+
+
+
+
+        </main>
+        <footer>
+            <p id="footer"><small>© <a href="aboutme.html">Ong Weng kai</a>|Last updated: 5 July 2021</small></p>
+        </footer>
+
+        <!--start of javascript-->
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = () => {
+                navbar.classList.add("show");
+                menuBtn.classList.add("hide");
+                body.classList.add("disabled");
+            }
+            cancelBtn.onclick = () => {
+                body.classList.remove("disabled");
+                navbar.classList.remove("show");
+                menuBtn.classList.remove("hide");
+            }
+            window.onscroll = () => {
+                this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+        <!--end of javascript-->
+
+    </article>
+    <!--end of article-->
+</body>
+<!--end of body-->
+
+</html>
