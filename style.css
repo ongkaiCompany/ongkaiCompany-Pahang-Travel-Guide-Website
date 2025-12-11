@@ -631,7 +631,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("img/Wall");
+  background-image: url("img/BlackWall");
 
   /* ====background: url("https://images.unsplash.com/photo-1515549832467-8783363e19b6?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat;
   background-size: cover;  */
@@ -738,3 +738,4 @@ margin-top: 460px;
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #40D3DC;
 }
+
